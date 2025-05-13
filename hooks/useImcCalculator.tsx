@@ -67,21 +67,9 @@ export default function useImcCalculator({ onCalculate }: Props) {
       onCalculate({ bmi, category, color });
       setLastValues(values);
 
-      toast("Event has been created", {
-        description: "Sunday, December 03, 2023 at 9:00 AM",
-        action: {
-          label: "Undo",
-          onClick: () => console.log("Undo"),
-        },
-      })
+      toast("Formulaire envoyé")
     } catch (error) {
-      toast("Event has been created", {
-        description: "Sunday, December 03, 2023 at 9:00 AM",
-        action: {
-          label: "Undo",
-          onClick: () => console.log("Undo"),
-        },
-      })
+      toast("problème dans l'envoi du formulaire")
     }
   }
 
