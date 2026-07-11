@@ -14,7 +14,7 @@ type ResultProps = {
 
 export default function Home() {
 
-  const [bmiResult, setBmiResult] = useState < ResultProps | null>(null);
+  const [bmiResult, setBmiResult] = useState<ResultProps | null>(null);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-blue-100">
