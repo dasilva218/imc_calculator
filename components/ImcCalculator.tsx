@@ -115,7 +115,7 @@ export function IMCCalculator({ onCalculate }: Props) {
                 height: "",
                 unit: "metric",
               });
-              onCalculate(null);
+              onCalculate({ bmi: 0, category: "", color: "" });
             }}
           >
             Réinitialiser

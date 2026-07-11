@@ -24,7 +24,7 @@ export default function useImcCalculator({ onCalculate }: Props) {
   const [lastValues, setLastValues] = useState({
     weight: "",
     height: "",
-    unit: "metric" as const,
+    unit: "metric",
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
